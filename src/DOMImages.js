@@ -62,12 +62,27 @@ class DOMImages {
      * @public
      */
     loadAll() {
-        const promises = this.getDocumentImages().map(url => {
-            return new Promise(resolve => {
-                const img = new Image
-                img.src = url
-                img.onload = function () {
-                    resolve()
+        return this.loadImages(
+            this.getDocumentImages()
+        )
+    }
+
+    /**
+     * @param {Array} urls
+     * @returns {Promise}
+     * @public
+     */
+    loadImages(urls) {
+        const promises = urls.map(url => {
+            return new Promise((resolve, reject) => {
+                try {
+                    const img = new Image
+                    img.onload = function () {
+                        resolve()
+                    }
+                    img.src = url
+                } catch (e) {
+                    reject(e)
                 }
             })
         })
