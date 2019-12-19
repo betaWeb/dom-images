@@ -1,0 +1,24 @@
+.gallery__item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 2rem;
+    padding: 1rem;
+    background: transparent url('/assets/image_default-250x500.png') no-repeat center;
+    box-shadow: 4px 4px 2px rgba(0,0,0,.2);
+    z-index: 5;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-image: url('/assets/logo-50x50.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}

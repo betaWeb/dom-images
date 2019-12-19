@@ -1,0 +1,38 @@
+{
+  "name": "@betaweb/dom-images",
+  "version": "1.0.0",
+  "description": "A simple JS class to get, filter, handle images and catch their loading state on HTML document, HTML node, string and/or stylesheets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betaWeb/dom-images.git"
+  },
+  "keywords": [
+    "dom",
+    "images",
+    "handle-images",
+    "css",
+    "stylesheets",
+    "png",
+    "svg",
+    "jpg",
+    "jpeg",
+    "background-image",
+    "src",
+    "js",
+    "javascript",
+    "simple"
+  ],
+  "author": "Cyprien GLEPIN <betaweb34@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/betaWeb/dom-images/issues"
+  },
+  "homepage": "https://github.com/betaWeb/dom-images#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
